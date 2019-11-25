@@ -8,6 +8,7 @@
 
 import Foundation
 import CatCore
+import CoreDataService
 import RxSwift
 import Koloda
 
@@ -62,7 +63,12 @@ final class MainCardsViewPresenter: BasePresenter<MainCardsViewType>, MainCardsV
     func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
         switch direction{
         case .right:
-            print("Liked picture")
+            let repo = CoreDataRepository<Cat, Favorites>(storageContext: CoreDataStorageContext())
+            let fetchResults = repo.fetch(predicate: nil)
+            print(fetchResults)
+            
+            try! repo.save(object: self.catList.catList[index])
+            
         case .left:
             print("Didn't like picture")
         default: break

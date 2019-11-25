@@ -9,13 +9,6 @@
 import Foundation
 import RxSwift
 
-struct TestCat: Codable {
-    public let height: Int
-    public let id: String
-    public let url: String
-    public let width: Int
-}
-
 public final class APIClient: ClientType {
     struct Constants {
         static let url = "https://api.thecatapi.com/v1"

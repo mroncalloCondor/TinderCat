@@ -10,6 +10,9 @@
 		0BE0F602DFBD2974A5A54447 /* Pods_CatCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C448592795628AD89168D88D /* Pods_CatCore.framework */; };
 		DD81027B237A4452009F4453 /* SingleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD81027A237A4452009F4453 /* SingleInteractor.swift */; };
 		DD810284237A512D009F4453 /* UIImageView+KingFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD810283237A512D009F4453 /* UIImageView+KingFisher.swift */; };
+		DD992D13238B6EC2005D86EF /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD992D12238B6EC2005D86EF /* CoreDataRepository.swift */; };
+		DD992D15238B6EF0005D86EF /* CoreDataService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD992D14238B6EF0005D86EF /* CoreDataService.framework */; };
+		DD992D23238B76ED005D86EF /* NSManagedObject+Storable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD992D22238B76ED005D86EF /* NSManagedObject+Storable.swift */; };
 		DDA3605A237A21F7000482E2 /* CatCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA36050237A21F6000482E2 /* CatCore.framework */; };
 		DDA3605F237A21F7000482E2 /* CatCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3605E237A21F7000482E2 /* CatCoreTests.swift */; };
 		DDA36061237A21F7000482E2 /* CatCore.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA36053237A21F6000482E2 /* CatCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +45,9 @@
 		C448592795628AD89168D88D /* Pods_CatCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD81027A237A4452009F4453 /* SingleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInteractor.swift; sourceTree = "<group>"; };
 		DD810283237A512D009F4453 /* UIImageView+KingFisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+KingFisher.swift"; sourceTree = "<group>"; };
+		DD992D12238B6EC2005D86EF /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
+		DD992D14238B6EF0005D86EF /* CoreDataService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD992D22238B76ED005D86EF /* NSManagedObject+Storable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Storable.swift"; sourceTree = "<group>"; };
 		DDA36050237A21F6000482E2 /* CatCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CatCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA36053237A21F6000482E2 /* CatCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CatCore.h; sourceTree = "<group>"; };
 		DDA36054237A21F6000482E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD992D15238B6EF0005D86EF /* CoreDataService.framework in Frameworks */,
 				0BE0F602DFBD2974A5A54447 /* Pods_CatCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +91,7 @@
 		0092A7A5A8BE02D866BAD179 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD992D14238B6EF0005D86EF /* CoreDataService.framework */,
 				C448592795628AD89168D88D /* Pods_CatCore.framework */,
 			);
 			name = Frameworks;
@@ -97,6 +105,14 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		DD992D11238B6EB5005D86EF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DD992D12238B6EC2005D86EF /* CoreDataRepository.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		DDA36046237A21F6000482E2 = {
@@ -142,6 +158,7 @@
 		DDA3606A237A2216000482E2 /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				DD992D11238B6EB5005D86EF /* CoreData */,
 				DDA3607D237A2377000482E2 /* BaseViewController */,
 				DDA36076237A232A000482E2 /* Router */,
 				DDA36073237A22F5000482E2 /* BasePresenter */,
@@ -202,6 +219,7 @@
 				DDA36083237A23C5000482E2 /* UIViewController.swift */,
 				DDA36085237A23DA000482E2 /* UIView.swift */,
 				DD810283237A512D009F4453 /* UIImageView+KingFisher.swift */,
+				DD992D22238B76ED005D86EF /* NSManagedObject+Storable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -347,6 +365,8 @@
 				DDA36086237A23DA000482E2 /* UIView.swift in Sources */,
 				DDA36075237A230B000482E2 /* BasePresenter.swift in Sources */,
 				DDA3607F237A2384000482E2 /* BaseViewControllerType.swift in Sources */,
+				DD992D23238B76ED005D86EF /* NSManagedObject+Storable.swift in Sources */,
+				DD992D13238B6EC2005D86EF /* CoreDataRepository.swift in Sources */,
 				DDA36084237A23C5000482E2 /* UIViewController.swift in Sources */,
 				DD81027B237A4452009F4453 /* SingleInteractor.swift in Sources */,
 				DDA3607A237A2351000482E2 /* RouterType.swift in Sources */,

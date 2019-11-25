@@ -14,7 +14,7 @@ final class CardListWrapper {
         var catList = [Cat]()
         
         for cat in cats {
-            let catData = Cat(breeds: [], categories: [], height: cat.height, id: cat.id, url: cat.url, width: cat.width)
+            let catData = Cat(height: cat.height, id: cat.id, url: cat.url, width: cat.width)
             catList.append(catData)
         }
         

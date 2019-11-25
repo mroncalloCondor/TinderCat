@@ -19,6 +19,7 @@ end
 target 'TinderCat' do
   rxPods
   uiPods
+  pod 'Runtime'
   
   target 'Services' do
     inherit! :search_paths
@@ -33,6 +34,11 @@ target 'TinderCat' do
   target 'CatCore' do
     inherit! :search_paths
     project 'CatCore/CatCore.project'
+  end
+  
+  target 'CoreDataService' do
+    inherit! :search_paths
+    project 'CoreDataService/CoreDataService.project'
   end
 
   target 'TinderCatUITests' do
