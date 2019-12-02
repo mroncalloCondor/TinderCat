@@ -7,12 +7,12 @@
 //
 
 import Foundation
-import Catcore
+import CatCore
 
 public final class LogInConfigurator {
     class func configure(moduleInput: LogInPresenter.ModuleInput) -> UIViewController {
         let dependencies = self.createDependencies(coordinator: moduleInput.coordinator)
-        let presenter = LogInPresenter(dependencies: dependencies)
+        let presenter = LogInPresenter(dependencies: dependencies, parent: <#LogInViewType#>)
         let logInViewController = LogInViewController(presenter: presenter)
         return logInViewController
     }

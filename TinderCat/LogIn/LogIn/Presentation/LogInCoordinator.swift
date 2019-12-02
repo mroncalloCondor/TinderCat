@@ -11,7 +11,7 @@ import CatCore
 import MainCardsView
 import SafariServices
 
-protocol LogInCoordinatorType {
+protocol LogInCoordinatorType: AnyObject {
     func nagivateToMainView()
     func navigateToRegister()
 }
@@ -30,7 +30,8 @@ final public class LogInCoordinator: BaseCoordinator {
     }
 }
 
-extension LogInCoordinator: LogInCoordinatorType, SFSafariViewControllerDelegate {
+extension LogInCoordinator: LogInCoordinatorType {
+    
     func nagivateToMainView() {
         let coordinator = MainCardsViewCoordinator(router: self.router)
         coordinator.start()
@@ -40,10 +41,5 @@ extension LogInCoordinator: LogInCoordinatorType, SFSafariViewControllerDelegate
         let url = URL(string: "https://thecatapi.com/signup")
         let safariVC = SFSafariViewController(url: url!)
         self.router.push(safariVC)
-        safariVC.delegate = self
-    }
-    
-    public func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
-        controller.dismiss(animated: true, completion: nil)
     }
 }

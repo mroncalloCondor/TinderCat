@@ -17,14 +17,13 @@ final class LogInPresenter: BasePresenter<LogInViewType>, LogInPresenterType {
     
     private let dependencies: InputDependencies
     
-    init(dependencies: InputDependencies,
-         parent: LogInViewType) {
+    init(dependencies: InputDependencies) {
         self.dependencies = dependencies
         super.init()
     }
     
     func didPressSignIn(username: String, apiKey: String) {
-        KeychainHelper.set(value: apiKey.data(using: .utf8), account: API_KEY_KEYCHAIN_ACCOUNT)
+        try? KeychainHelper.set(value: apiKey.data(using: .utf8)!, account: API_KEY_KEYCHAIN_ACCOUNT)
         UserDefaultsHelper.set(value: true, for: IS_LOGGED_KEY)
         dependencies.coordinator?.nagivateToMainView()
     }

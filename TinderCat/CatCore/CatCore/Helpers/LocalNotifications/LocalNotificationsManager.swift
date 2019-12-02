@@ -19,7 +19,7 @@ public final class LocalNotificationsManager: LocalNotificationsManagerType {
             case .authorized, .provisional:
                 self.scheduleNotifications()
             default:
-                break // Do nothing
+                break
             }
         }
     }

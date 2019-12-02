@@ -15,6 +15,7 @@
 		DDA3608B237A2837000482E2 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3608A237A2837000482E2 /* APIResponse.swift */; };
 		DDA3608E237A2863000482E2 /* ClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3608D237A2863000482E2 /* ClientType.swift */; };
 		DDA36090237A2A91000482E2 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA3608F237A2A91000482E2 /* APIClient.swift */; };
+		DDAA3D222395A3F000D08C85 /* CatCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAA3D212395A3F000D08C85 /* CatCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		DDA3608A237A2837000482E2 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		DDA3608D237A2863000482E2 /* ClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientType.swift; sourceTree = "<group>"; };
 		DDA3608F237A2A91000482E2 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		DDAA3D212395A3F000D08C85 /* CatCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAA3D222395A3F000D08C85 /* CatCore.framework in Frameworks */,
 				886AC7B8EF7E78B2DCA8683F /* Pods_Services.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +69,7 @@
 		0013400E2DF8082386CABD5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDAA3D212395A3F000D08C85 /* CatCore.framework */,
 				45E75B854FE38B47DA24FC2E /* Pods_Services.framework */,
 			);
 			name = Frameworks;
