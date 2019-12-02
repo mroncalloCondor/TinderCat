@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C0835EE821D16AF5D7FB5D /* Pods_LogIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC91C84F5DEB47AAE2D18A8 /* Pods_LogIn.framework */; };
 		DD07BCD92394DB4C0009D580 /* LogIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD07BCCF2394DB4C0009D580 /* LogIn.framework */; };
 		DD07BCDE2394DB4D0009D580 /* LogInTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCDD2394DB4D0009D580 /* LogInTests.swift */; };
 		DD07BCE02394DB4D0009D580 /* LogIn.h in Headers */ = {isa = PBXBuildFile; fileRef = DD07BCD22394DB4C0009D580 /* LogIn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD07BCEB2394DB970009D580 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCEA2394DB970009D580 /* LogInView.swift */; };
+		DD07BCF22394DFE50009D580 /* LogInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCF12394DFE50009D580 /* LogInCoordinator.swift */; };
+		DD07BCF42394DFF90009D580 /* LogInConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCF32394DFF90009D580 /* LogInConfigurator.swift */; };
+		DD07BCF62394E0020009D580 /* LogInContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCF52394E0020009D580 /* LogInContract.swift */; };
+		DD07BCF82394E00D0009D580 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCF72394E00D0009D580 /* LogInViewController.swift */; };
+		DD07BCFA2394E0160009D580 /* LogInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCF92394E0160009D580 /* LogInPresenter.swift */; };
+		DD07BCFC2394E1910009D580 /* LogInPresenter+InOutData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCFB2394E1910009D580 /* LogInPresenter+InOutData.swift */; };
+		DD07BD052394EEA30009D580 /* CatCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD07BD042394EEA30009D580 /* CatCore.framework */; };
+		DD8B95662394EF6600476F78 /* MainCardsView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B95652394EF6600476F78 /* MainCardsView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AC91C84F5DEB47AAE2D18A8 /* Pods_LogIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35EAA20AD11951EB595E1EE0 /* Pods-LogIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogIn.release.xcconfig"; path = "Target Support Files/Pods-LogIn/Pods-LogIn.release.xcconfig"; sourceTree = "<group>"; };
+		7DB1D09D92F3B661634BCDFE /* Pods-LogIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogIn.debug.xcconfig"; path = "Target Support Files/Pods-LogIn/Pods-LogIn.debug.xcconfig"; sourceTree = "<group>"; };
 		DD07BCCF2394DB4C0009D580 /* LogIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD07BCD22394DB4C0009D580 /* LogIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogIn.h; sourceTree = "<group>"; };
 		DD07BCD32394DB4C0009D580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +43,14 @@
 		DD07BCDD2394DB4D0009D580 /* LogInTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTests.swift; sourceTree = "<group>"; };
 		DD07BCDF2394DB4D0009D580 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD07BCEA2394DB970009D580 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		DD07BCF12394DFE50009D580 /* LogInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInCoordinator.swift; sourceTree = "<group>"; };
+		DD07BCF32394DFF90009D580 /* LogInConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInConfigurator.swift; sourceTree = "<group>"; };
+		DD07BCF52394E0020009D580 /* LogInContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInContract.swift; sourceTree = "<group>"; };
+		DD07BCF72394E00D0009D580 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		DD07BCF92394E0160009D580 /* LogInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPresenter.swift; sourceTree = "<group>"; };
+		DD07BCFB2394E1910009D580 /* LogInPresenter+InOutData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogInPresenter+InOutData.swift"; sourceTree = "<group>"; };
+		DD07BD042394EEA30009D580 /* CatCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CatCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD8B95652394EF6600476F78 /* MainCardsView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MainCardsView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8B95662394EF6600476F78 /* MainCardsView.framework in Frameworks */,
+				DD07BD052394EEA30009D580 /* CatCore.framework in Frameworks */,
+				29C0835EE821D16AF5D7FB5D /* Pods_LogIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +75,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		758F609D1055A76AD46DADEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DB1D09D92F3B661634BCDFE /* Pods-LogIn.debug.xcconfig */,
+				35EAA20AD11951EB595E1EE0 /* Pods-LogIn.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		DD07BCC52394DB4C0009D580 = {
 			isa = PBXGroup;
 			children = (
 				DD07BCD12394DB4C0009D580 /* LogIn */,
 				DD07BCDC2394DB4D0009D580 /* LogInTests */,
 				DD07BCD02394DB4C0009D580 /* Products */,
+				DD07BD032394EEA30009D580 /* Frameworks */,
+				758F609D1055A76AD46DADEB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,8 +128,24 @@
 			isa = PBXGroup;
 			children = (
 				DD07BCEA2394DB970009D580 /* LogInView.swift */,
+				DD07BCF12394DFE50009D580 /* LogInCoordinator.swift */,
+				DD07BCF32394DFF90009D580 /* LogInConfigurator.swift */,
+				DD07BCF52394E0020009D580 /* LogInContract.swift */,
+				DD07BCF72394E00D0009D580 /* LogInViewController.swift */,
+				DD07BCF92394E0160009D580 /* LogInPresenter.swift */,
+				DD07BCFB2394E1910009D580 /* LogInPresenter+InOutData.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DD07BD032394EEA30009D580 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD8B95652394EF6600476F78 /* MainCardsView.framework */,
+				DD07BD042394EEA30009D580 /* CatCore.framework */,
+				1AC91C84F5DEB47AAE2D18A8 /* Pods_LogIn.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD07BCE32394DB4D0009D580 /* Build configuration list for PBXNativeTarget "LogIn" */;
 			buildPhases = (
+				312CB52079FB525D15A36183 /* [CP] Check Pods Manifest.lock */,
 				DD07BCCA2394DB4C0009D580 /* Headers */,
 				DD07BCCB2394DB4C0009D580 /* Sources */,
 				DD07BCCC2394DB4C0009D580 /* Frameworks */,
@@ -201,11 +253,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		312CB52079FB525D15A36183 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LogIn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD07BCCB2394DB4C0009D580 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD07BCF22394DFE50009D580 /* LogInCoordinator.swift in Sources */,
+				DD07BCF62394E0020009D580 /* LogInContract.swift in Sources */,
+				DD07BCFA2394E0160009D580 /* LogInPresenter.swift in Sources */,
+				DD07BCFC2394E1910009D580 /* LogInPresenter+InOutData.swift in Sources */,
+				DD07BCF42394DFF90009D580 /* LogInConfigurator.swift in Sources */,
+				DD07BCF82394E00D0009D580 /* LogInViewController.swift in Sources */,
 				DD07BCEB2394DB970009D580 /* LogInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +436,7 @@
 		};
 		DD07BCE42394DB4D0009D580 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB1D09D92F3B661634BCDFE /* Pods-LogIn.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -379,6 +463,7 @@
 		};
 		DD07BCE52394DB4D0009D580 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35EAA20AD11951EB595E1EE0 /* Pods-LogIn.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

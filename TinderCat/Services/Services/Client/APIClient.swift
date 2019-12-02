@@ -13,7 +13,6 @@ import CatCore
 public final class APIClient: ClientType {
     struct Constants {
         static let url = "https://api.thecatapi.com/v1"
-        static let apiKey = "a513b1fc-ac51-4ce1-a30e-f5099a4b6d7c"
     }
     
     public init() {
@@ -41,7 +40,8 @@ public final class APIClient: ClientType {
                 
                 var httpRequest = URLRequest(url: urlComponents.url!)
                 httpRequest.httpMethod = request.method.rawValue
-                httpRequest.addValue("x-api-key", forHTTPHeaderField: Constants.apiKey)
+                let apiKey = try! KeychainHelper.get(account: API_KEY_KEYCHAIN_ACCOUNT)
+                httpRequest.addValue("x-api-key", forHTTPHeaderField: String(data: apiKey!, encoding: .utf8)!)
                 
                 let manager = URLSession(configuration: .default)
                 let task = manager.dataTask(with: httpRequest) { (data, response, error) in

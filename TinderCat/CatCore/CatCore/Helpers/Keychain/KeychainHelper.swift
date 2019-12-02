@@ -16,7 +16,7 @@ public final class KeychainHelper: KeychainHelperType {
     }
     
     private static let service: String = "TinderCat"
-    /// Does a certain item exist?
+    
     private static func exists(account: String) throws -> Bool {
         let status = SecItemCopyMatching([
             kSecClass: kSecClassGenericPassword,
@@ -33,20 +33,17 @@ public final class KeychainHelper: KeychainHelperType {
         }
     }
     
-    /// Adds an item to the keychain.
     private static func add(value: Data, account: String) throws {
         let status = SecItemAdd([
             kSecClass: kSecClassGenericPassword,
             kSecAttrAccount: account,
             kSecAttrService: service,
-            // Allow background access:
             kSecAttrAccessible: kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly,
             kSecValueData: value,
             ] as NSDictionary, nil)
         guard status == errSecSuccess else { throw Errors.keychainError }
     }
     
-    /// Updates a keychain item.
     private static func update(value: Data, account: String) throws {
         let status = SecItemUpdate([
             kSecClass: kSecClassGenericPassword,
@@ -58,7 +55,6 @@ public final class KeychainHelper: KeychainHelperType {
         guard status == errSecSuccess else { throw Errors.keychainError }
     }
     
-    /// Stores a keychain item.
     public static func set(value: Data, account: String) throws {
         if try exists(account: account) {
             try update(value: value, account: account)
@@ -67,7 +63,6 @@ public final class KeychainHelper: KeychainHelperType {
         }
     }
     
-    // If not present, returns nil. Only throws on error.
     public static func get(account: String) throws -> Data? {
         var result: AnyObject?
         let status = SecItemCopyMatching([
@@ -85,7 +80,6 @@ public final class KeychainHelper: KeychainHelperType {
         }
     }
     
-    /// Delete a single item.
     public static func delete(account: String) throws {
         let status = SecItemDelete([
             kSecClass: kSecClassGenericPassword,

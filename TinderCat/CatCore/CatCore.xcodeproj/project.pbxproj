@@ -14,6 +14,7 @@
 		DD07BCC42394DA140009D580 /* KeychainHelperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCC32394DA140009D580 /* KeychainHelperType.swift */; };
 		DD07BCEE2394DD950009D580 /* UserDefaultsHelperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCED2394DD950009D580 /* UserDefaultsHelperType.swift */; };
 		DD07BCF02394DDD10009D580 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCEF2394DDD10009D580 /* UserDefaultsHelper.swift */; };
+		DD07BCFF2394EA1C0009D580 /* CoreConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCFE2394EA1C0009D580 /* CoreConstants.swift */; };
 		DD81027B237A4452009F4453 /* SingleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD81027A237A4452009F4453 /* SingleInteractor.swift */; };
 		DD810284237A512D009F4453 /* UIImageView+KingFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD810283237A512D009F4453 /* UIImageView+KingFisher.swift */; };
 		DD992D13238B6EC2005D86EF /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD992D12238B6EC2005D86EF /* CoreDataRepository.swift */; };
@@ -55,6 +56,7 @@
 		DD07BCC32394DA140009D580 /* KeychainHelperType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelperType.swift; sourceTree = "<group>"; };
 		DD07BCED2394DD950009D580 /* UserDefaultsHelperType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelperType.swift; sourceTree = "<group>"; };
 		DD07BCEF2394DDD10009D580 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		DD07BCFE2394EA1C0009D580 /* CoreConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreConstants.swift; sourceTree = "<group>"; };
 		DD81027A237A4452009F4453 /* SingleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInteractor.swift; sourceTree = "<group>"; };
 		DD810283237A512D009F4453 /* UIImageView+KingFisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+KingFisher.swift"; sourceTree = "<group>"; };
 		DD992D12238B6EC2005D86EF /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		DD07BCFD2394EA0F0009D580 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DD07BCFE2394EA1C0009D580 /* CoreConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		DD71FF142394CC17002BCF0C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 		DDA36052237A21F6000482E2 /* CatCore */ = {
 			isa = PBXGroup;
 			children = (
+				DD07BCFD2394EA0F0009D580 /* Constants */,
 				DD71FF142394CC17002BCF0C /* Helpers */,
 				DDA36082237A23B8000482E2 /* Extensions */,
 				DDA36053237A21F6000482E2 /* CatCore.h */,
@@ -427,6 +438,7 @@
 				DDA36081237A2393000482E2 /* BaseViewController.swift in Sources */,
 				DD07BCC22394D8710009D580 /* KeychainHelper.swift in Sources */,
 				DDA3606F237A2256000482E2 /* BaseCoordinator.swift in Sources */,
+				DD07BCFF2394EA1C0009D580 /* CoreConstants.swift in Sources */,
 				DDA36078237A2340000482E2 /* Presentable.swift in Sources */,
 				DD07BCBC2394CC670009D580 /* LocalNotificationsManager.swift in Sources */,
 				DDA36072237A22E1000482E2 /* BaseInteractor.swift in Sources */,

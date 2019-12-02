@@ -40,6 +40,11 @@ target 'TinderCat' do
     inherit! :search_paths
     project 'CoreDataService/CoreDataService.project'
   end
+  
+  target 'LogIn' do
+    inherit! :search_paths
+    project 'LogIn/LogIn.project'
+  end
 
   target 'TinderCatUITests' do
   end
