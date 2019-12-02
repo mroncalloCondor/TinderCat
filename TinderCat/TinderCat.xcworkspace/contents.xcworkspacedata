@@ -8,6 +8,9 @@
       location = "group:MainCardsView/MainCardsView.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:LogIn/LogIn.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CatCore/CatCore.xcodeproj">
    </FileRef>
    <FileRef

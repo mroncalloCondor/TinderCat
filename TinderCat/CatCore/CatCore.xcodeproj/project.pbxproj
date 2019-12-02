@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0BE0F602DFBD2974A5A54447 /* Pods_CatCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C448592795628AD89168D88D /* Pods_CatCore.framework */; };
+		DD07BCBC2394CC670009D580 /* LocalNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCBB2394CC670009D580 /* LocalNotificationsManager.swift */; };
+		DD07BCBE2394D2EB0009D580 /* LocalNotificationsManagerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCBD2394D2EB0009D580 /* LocalNotificationsManagerType.swift */; };
+		DD07BCC22394D8710009D580 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCC12394D8710009D580 /* KeychainHelper.swift */; };
+		DD07BCC42394DA140009D580 /* KeychainHelperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCC32394DA140009D580 /* KeychainHelperType.swift */; };
+		DD07BCEE2394DD950009D580 /* UserDefaultsHelperType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCED2394DD950009D580 /* UserDefaultsHelperType.swift */; };
+		DD07BCF02394DDD10009D580 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD07BCEF2394DDD10009D580 /* UserDefaultsHelper.swift */; };
 		DD81027B237A4452009F4453 /* SingleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD81027A237A4452009F4453 /* SingleInteractor.swift */; };
 		DD810284237A512D009F4453 /* UIImageView+KingFisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD810283237A512D009F4453 /* UIImageView+KingFisher.swift */; };
 		DD992D13238B6EC2005D86EF /* CoreDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD992D12238B6EC2005D86EF /* CoreDataRepository.swift */; };
@@ -43,6 +49,12 @@
 		4C917D9BD917AE425405BAC7 /* Pods-CatCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatCore.debug.xcconfig"; path = "Target Support Files/Pods-CatCore/Pods-CatCore.debug.xcconfig"; sourceTree = "<group>"; };
 		5FF1AB258AFE662A074B63E4 /* Pods-CatCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatCore.release.xcconfig"; path = "Target Support Files/Pods-CatCore/Pods-CatCore.release.xcconfig"; sourceTree = "<group>"; };
 		C448592795628AD89168D88D /* Pods_CatCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD07BCBB2394CC670009D580 /* LocalNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsManager.swift; sourceTree = "<group>"; };
+		DD07BCBD2394D2EB0009D580 /* LocalNotificationsManagerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationsManagerType.swift; sourceTree = "<group>"; };
+		DD07BCC12394D8710009D580 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		DD07BCC32394DA140009D580 /* KeychainHelperType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelperType.swift; sourceTree = "<group>"; };
+		DD07BCED2394DD950009D580 /* UserDefaultsHelperType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelperType.swift; sourceTree = "<group>"; };
+		DD07BCEF2394DDD10009D580 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		DD81027A237A4452009F4453 /* SingleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleInteractor.swift; sourceTree = "<group>"; };
 		DD810283237A512D009F4453 /* UIImageView+KingFisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+KingFisher.swift"; sourceTree = "<group>"; };
 		DD992D12238B6EC2005D86EF /* CoreDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRepository.swift; sourceTree = "<group>"; };
@@ -107,6 +119,43 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		DD07BCBF2394D8500009D580 /* LocalNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				DD07BCBD2394D2EB0009D580 /* LocalNotificationsManagerType.swift */,
+				DD07BCBB2394CC670009D580 /* LocalNotificationsManager.swift */,
+			);
+			path = LocalNotifications;
+			sourceTree = "<group>";
+		};
+		DD07BCC02394D85F0009D580 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				DD07BCC12394D8710009D580 /* KeychainHelper.swift */,
+				DD07BCC32394DA140009D580 /* KeychainHelperType.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		DD07BCEC2394DD840009D580 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				DD07BCED2394DD950009D580 /* UserDefaultsHelperType.swift */,
+				DD07BCEF2394DDD10009D580 /* UserDefaultsHelper.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		DD71FF142394CC17002BCF0C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD07BCEC2394DD840009D580 /* UserDefaults */,
+				DD07BCC02394D85F0009D580 /* Keychain */,
+				DD07BCBF2394D8500009D580 /* LocalNotifications */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DD992D11238B6EB5005D86EF /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +187,7 @@
 		DDA36052237A21F6000482E2 /* CatCore */ = {
 			isa = PBXGroup;
 			children = (
+				DD71FF142394CC17002BCF0C /* Helpers */,
 				DDA36082237A23B8000482E2 /* Extensions */,
 				DDA36053237A21F6000482E2 /* CatCore.h */,
 				DDA3606A237A2216000482E2 /* BaseClasses */,
@@ -359,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD07BCF02394DDD10009D580 /* UserDefaultsHelper.swift in Sources */,
 				DDA3606D237A2230000482E2 /* CoordinatorType.swift in Sources */,
 				DD810284237A512D009F4453 /* UIImageView+KingFisher.swift in Sources */,
 				DDA3607C237A2369000482E2 /* MainRouter.swift in Sources */,
@@ -366,13 +417,18 @@
 				DDA36075237A230B000482E2 /* BasePresenter.swift in Sources */,
 				DDA3607F237A2384000482E2 /* BaseViewControllerType.swift in Sources */,
 				DD992D23238B76ED005D86EF /* NSManagedObject+Storable.swift in Sources */,
+				DD07BCBE2394D2EB0009D580 /* LocalNotificationsManagerType.swift in Sources */,
+				DD07BCEE2394DD950009D580 /* UserDefaultsHelperType.swift in Sources */,
 				DD992D13238B6EC2005D86EF /* CoreDataRepository.swift in Sources */,
 				DDA36084237A23C5000482E2 /* UIViewController.swift in Sources */,
 				DD81027B237A4452009F4453 /* SingleInteractor.swift in Sources */,
+				DD07BCC42394DA140009D580 /* KeychainHelperType.swift in Sources */,
 				DDA3607A237A2351000482E2 /* RouterType.swift in Sources */,
 				DDA36081237A2393000482E2 /* BaseViewController.swift in Sources */,
+				DD07BCC22394D8710009D580 /* KeychainHelper.swift in Sources */,
 				DDA3606F237A2256000482E2 /* BaseCoordinator.swift in Sources */,
 				DDA36078237A2340000482E2 /* Presentable.swift in Sources */,
+				DD07BCBC2394CC670009D580 /* LocalNotificationsManager.swift in Sources */,
 				DDA36072237A22E1000482E2 /* BaseInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

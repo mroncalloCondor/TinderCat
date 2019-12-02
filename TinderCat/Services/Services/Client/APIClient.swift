@@ -8,6 +8,7 @@
 
 import Foundation
 import RxSwift
+import CatCore
 
 public final class APIClient: ClientType {
     struct Constants {
